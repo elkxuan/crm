@@ -74,7 +74,7 @@ export default {
             const clientID = this.$route.params.id
 
             axios
-                .patch(`/api/v1/clients/${clientID}/`, this.lead)
+                .patch(`/api/v1/clients/${clientID}/`, this.client)
                 .then(response => {
                     toast({
                         message: 'Updated successfully',
